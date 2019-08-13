@@ -1176,7 +1176,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Testbad</value>
+    <value>Test Good</value>
   </data>
   <data name="&gt;&gt;ctxView.Name" xml:space="preserve">
     <value>ctxView</value>
