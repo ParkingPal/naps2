@@ -1374,6 +1374,11 @@ namespace NAPS2.WinForms
             FormFactory.Create<FAbout>().ShowDialog();
         }
 
+        private void tsMonitor_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Users\jspann\source\repos\KFJRMonitor\KFJRMonitor\bin\Release\KFJRMonitor.exe");
+        }
+
         #endregion
 
         #region Event Handlers - Save/Email Menus

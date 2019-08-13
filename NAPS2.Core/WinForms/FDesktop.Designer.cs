@@ -106,6 +106,7 @@ namespace NAPS2.WinForms
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.tsAbout = new System.Windows.Forms.ToolStripButton();
+            this.tsMonitor = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -253,7 +254,8 @@ namespace NAPS2.WinForms
             this.tsClear,
             this.toolStripSeparator3,
             this.toolStripDropDownButton1,
-            this.tsAbout});
+            this.tsAbout,
+            this.tsMonitor});
             this.tStrip.Name = "tStrip";
             this.tStrip.ShowItemToolTips = false;
             this.tStrip.TabStop = true;
@@ -686,6 +688,13 @@ namespace NAPS2.WinForms
             this.tsAbout.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.tsAbout.Click += new System.EventHandler(this.tsAbout_Click);
             // 
+            // tsMonitor
+            // 
+            this.tsMonitor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsMonitor, "tsMonitor");
+            this.tsMonitor.Name = "tsMonitor";
+            this.tsMonitor.Click += new System.EventHandler(this.tsMonitor_Click);
+            // 
             // FDesktop
             // 
             resources.ApplyResources(this, "$this");
@@ -779,6 +788,7 @@ namespace NAPS2.WinForms
         private System.Windows.Forms.ToolStripMenuItem tsSharpen;
         private System.Windows.Forms.ToolStripMenuItem tsHueSaturation;
         private System.Windows.Forms.ToolStripMenuItem tsBlackWhite;
+        private System.Windows.Forms.ToolStripButton tsMonitor;
     }
 }
 
